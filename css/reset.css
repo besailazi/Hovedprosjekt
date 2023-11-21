@@ -1,0 +1,11 @@
+* {
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+

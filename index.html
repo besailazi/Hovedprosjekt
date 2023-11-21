@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>Mainproject</title>
+
+</head>
+
+<body>
+<!--Add a nav bar-->
+    <header>
+		<h1>Buon Gelato</h1>
+       <nav id="nav-bar" class="navigation-bar">
+          <ul class="navigation">
+	          <li><a class="nav-link" href="#home">Home</a></li>
+	          <li><a class="nav-link" href="#about">About</a></li>
+	          <li><a class="nav-link" href="#products">Products</a></li>
+				 <li><a class="nav-link" href="#reservation">Reservation</a></li>
+	          <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+       </nav>
+		 
+   </header>
+
+<!-- Add a home page -->
+	<main>
+		<div class="container">
+		  <section id="home" class="home-section">
+			 <div class="title-text">
+				<h1>Buon Gelato</h1>
+				<p>-The home of ice cream-</p>
+			 </div>
+			 
+			 <div class="slideshow">
+			 
+				<div class="mySlides">
+				  <img src="assets/Photos/ice-cream-4848501_1280.jpg" style="width:100%">
+				  <div class="slideshow-text">The best flavors</div>
+				</div>
+			 
+				<div class="mySlides">
+					<img src="assets/Photos/ice-cream-6002667_1280.jpg" style="width:100%">
+					<div class="slideshow-text">The best recepies</div>
+				 </div>
+
+		  </section>
+		  
+		  <!-- Add a about page -->
+		  <section id="about" class="about-section">
+			 <div class="section-text">
+				<h2>About</h2>
+				<p>Boun Gelato is one of the oldest gelaterias in town. 
+					It was grouded in 1969 with the name "Beograd" that was later changed to "Buon Gelato". 
+					It's in the heart of the city of Novi Pazar.</p>
+				<p>It has old traditions with ice cream and has allways been providing the best one in town. 
+					This Ice Cafe has the biggest varity of ice cream flavors to choose from. In Boun Gelato every scoop is a celebration!</p>
+				<p>To make the ice cream they choose the best products the market offers and freshly prepare it with no preservatives.</p>
+			 </div>
+			 <div class="box-feature">
+				<img src="assets/Photos/Boun-gelato-ice-creams.jpg" alt="frontside of the cafe" />
+			 </div>
+		  </section>
+		  
+		  <!-- Add a products page -->
+		  <section id="products" class="samples">
+			 <div class="section-text-products">
+				<h2>Products</h2>
+				   <p>Take a look a some of your ice creams</p>
+                <hr />
+					<h3>Lactose-Free Ice Cream Options</h3>
+					 <label>
+						<input type="checkbox" id="lactoseFreeCheckbox"> Lactose-Free
+					 </label>
+	
+					 <div id="iceCreamList">
+						<ul>
+						   <li>Vanilla</li>
+							<li>Chocloate</li>
+							<li>Karamel</li>
+							<li>Hazelnut</li>
+							<li>Banana</li>
+							<li>Strawberry</li>
+							<li>Kiwi</li>
+							<li>Mango</li>
+							<li>Lemon</li>
+							<li>Bluberry</li>
+							<li>Wild Berrys</li>
+							<li>Stracitella</li>
+							<li>Kinder Boueno</li>
+							<li>Nutella</li>
+							<li>Snickers</li>
+
+						</ul>
+					</div>
+
+			 </div>
+		  </section>
+		  
+		  <!-- Add a reservation for table page -->
+		  <section id="reservation" class="reservation-section">
+			<div class="reservation-container">
+				<h2>Table Reservation</h2>
+				<form id="reservationForm">
+
+					 
+					 <input class="input-reservation" type="text" id="name" placeholder="Name" required>
+	 
+					 <input class="input-reservation" type="tel" id="phone" placeholder="Contact Number" required>
+	 
+					 <input class="input-reservation" type="email" id="email" placeholder="Email Adresse" required>
+	 
+					 <input class="input-reservation" type="number" id="persons" placeholder="Number of Persons" required>
+	
+					 <input class="input-reservation" type="date" id="date" required>
+	 
+					 <input class="input-reservation" type="time" id="time" required>
+	 
+					 <button type="button" onclick="submitForm()">Submit</button>
+					 <p>Thank you for choosing Boun Gelato. We look forward to serving you!</p>
+					 <span>Your reservation will be confirmed via email or phone.</span>
+				</form>
+		  </div>
+
+		  </section>
+		  
+		  <!--  Add a contact page -->
+		  <section id="contact" class="contact-section">
+			 <div class="section-text">
+				<h2>Contact us</h2>
+            <p>Phone number: +381693709999</p>
+		      <p>Email: arifilazi88@gmail.com</p>
+		      <h2>Adresse</h2>
+		      <p>Visegradska 9</p>
+		      <p>Novi Pazar, Srbija</p>
+				</div>
+				<div class="map">
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.4156533096198!2d20.51393047569258!3d43.13780028561334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756286cb166f5a7%3A0xf95e13a53cfc2eef!2sBuon%20Gelato!5e0!3m2!1sen!2sno!4v1698842127849!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			 </div>
+		  
+		  </section>
+	</main>
+
+	<!-- Add a footer-->
+	 <footer class="footer-section">
+		<span class="personal-info">Created by: Besa Ilazi</span>
+	 </footer>
+	 
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

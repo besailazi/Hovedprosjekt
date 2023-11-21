@@ -1,0 +1,355 @@
+
+
+ body{
+	display: flex;
+	flex-direction: column;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 1rem;
+	background-color: rgb(243, 242, 238);
+ }
+ 
+ h1 {
+	padding-bottom: 20px;
+	padding-left: 1rem;
+	text-align: start;
+	font-size: 50px;
+	letter-spacing: 1rem;
+ }
+ 
+ p {
+	font-size: 24px;
+	padding-left: 1rem;
+ }
+
+ /* Header */
+ header {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	background:rgb(17, 49, 17);
+	color: white;
+	width: 100%;
+	/*max-height: max-content;
+	min-height: 1rem;*/
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	z-index: 1;
+ }
+
+ .navigation-bar {
+	width: 100%;
+	
+ }
+
+ header a, footer a {
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+ }
+
+ header a:hover {
+	color: grey;
+ }
+ 
+ .navigation {
+	list-style: none;
+	display: flex;
+	flex-direction: row; 
+ }
+
+ .navigation li {
+	font-size: 2rem;
+ }
+
+ /* Home Page */
+ .slideshow {
+	max-width: 480px;
+	position: relative;
+	margin: auto;
+	object-fit: cover;
+ }
+ 
+ .mySlides {
+	display: none;
+ }
+ 
+ img {
+	width: 100%;
+	height: 100%;
+ }
+
+ .slideshow-text {
+	color: white;
+	font-size: 24px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: left;
+ }
+ .container {
+	display: grid;
+	grid-template-columns: 100%;
+	padding-top: 2rem;
+	width: 100%;
+ }
+ 
+ section {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 10% 0;
+ }
+ 
+ section div {
+	width: 100%;
+	margin: 0 auto;
+ }
+ 
+ section h2{
+	text-align: center;
+	font-size: 36px;
+	padding-bottom: 15px;
+ }
+ 
+ .home-section {
+	margin-top: 0px;
+	padding: 5% 0;
+ }
+ 
+ .title-text {
+	width: 40%;
+	text-align: start;
+	color: black;
+	margin: auto;
+	padding: 0 20px;
+ }
+ 
+ /*About Page */
+ .about-section{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: rgb(17, 49, 17);
+	color: #fff;
+ }
+ 
+ .box-feature{
+	width: 60%;
+	max-height: auto;
+ }
+ 
+ .box-feature img{
+	width: 100%;
+ }
+
+/* Products page */
+ .samples {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+ }
+ 
+ .section-text-products {
+	margin: auto;
+	line-height: 2rem;
+ }
+
+ .section-text-products h2 {
+	margin-top: 110px;
+ }
+
+ #iceCreamList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+ }
+
+ .iceCreamItem {
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ #lactoseFreeCheckbox {
+	transform: scale(1.5);
+ }
+
+ /* Reservation page */
+ .reservation-container {
+	background-color: rgb(17, 49, 17);
+	color:#fff;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px #ccc;
+}
+.reservation-container h2 {
+	margin-top: 90px;
+}
+
+form {
+	display: grid;
+	grid-gap: 15px;
+}
+
+.input-reservation,
+textarea {
+	width: 60%;
+	padding: 15px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	background-color: rgb(243, 242, 238);
+	color: rgb(17, 49, 17);
+	padding: 15px 80px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: grey;
+}
+
+ /* Contact page */
+ .contact-section {
+	background: rgb(243, 242, 238);
+	color: #000;
+ }
+ 
+ .section-text  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto 1rem;
+ }
+
+ .section-text h2 {
+	margin-top: 100px;
+ }
+
+ .map {
+	width: 100%;
+	margin-top: 100px;
+ }
+
+ /* Footer */
+ .footer-section {
+	display: flex;
+	flex-direction: row;
+	height: 5rem;
+	width: 100%;
+	color: #fff;
+	background-color: rgb(17, 49, 17);
+ }
+ 
+ 
+ .footer-section .personal-info{
+	margin-left: 40rem;
+	text-align: center;
+ }
+
+ #back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color:rgb(17, 49, 17);
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+ 
+ /* Add mediaQuery */
+ @media all and (max-width: 780px){
+
+	body {
+		font-size: 1rem;
+	}
+	header h1 {
+		visibility: hidden;
+	}
+
+	header {
+		top: -50px;
+      width: 100%;
+      padding-top: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: column;
+	}
+
+	section div {
+	  width: 80%;
+	  padding-top: 6rem;
+	  padding-bottom: 0;
+	}
+
+	.about-section, .sample, .contact-section{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	.section-text-products h2 {
+		margin-top: 100px;
+	}
+	
+	#iceCreamList {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 50px;
+	 }
+
+	 .iceCreamItem {
+		width: 100%;
+	 }
+	
+	.section-text h2 {
+	  text-align: center; 
+	  font-size: 1.5rem;
+	}
+ 
+	.section-text p {
+	  font-size: 0.8rem;
+	} 
+
+	.map {
+		margin-top: 0;
+	   display: flex;
+	   flex-direction: column;
+	}
+
+	.reservation-container h2 {
+		padding-top: 6rem;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.input-reservation,
+textarea {
+	width: 80%;
+}
+
+	.footer-section .personal-info {
+		width: 100%;
+		margin-left: 0;
+		
+	}
+	
+ }
+ 
+ 
+ 
+ 
+ 
