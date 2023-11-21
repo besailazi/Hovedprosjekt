@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const contactSection = document.querySelector('#contact');
 
-	if (contactSection) {
+	if (contactSection !== null) {
 		 
 		 const backToTop = document.createElement('a');
 		 backToTop.id = 'back-to-top';
