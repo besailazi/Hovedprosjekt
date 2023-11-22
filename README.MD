@@ -20,5 +20,7 @@ Welcome to the Buon Gelato website! This website showcases the offerings of Buon
 
 # Folder Structure:
 -css: Contains the stylesheets used for styling the website.
+
 -assets: Includes images used on the website.
+
 -js: Contains JavaScript files for implementing dynamic functionality.
