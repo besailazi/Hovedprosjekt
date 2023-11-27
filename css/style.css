@@ -62,15 +62,22 @@
  }
 
  /* Home Page */
+ .container {
+	display: grid;
+	grid-template-columns: 100%;
+	padding-top: 10%;
+	width: 100%;
+ }
+
  .slideshow {
 	max-width: 480px;
 	position: relative;
 	margin: auto;
 	object-fit: cover;
+	margin-top: 20px;
  }
  
  .mySlides {
-	margin: 10px 30px;
 	display: none;
  }
  
@@ -87,12 +94,7 @@
 	width: 100%;
 	text-align: left;
  }
- .container {
-	display: grid;
-	grid-template-columns: 100%;
-	padding-top: 2rem;
-	width: 100%;
- }
+ 
  
  section {
 	display: flex;
@@ -114,7 +116,6 @@
  }
  
  .home-section {
-	margin-top: 0px;
 	padding: 5% 0;
  }
  
