@@ -70,6 +70,7 @@
  }
  
  .mySlides {
+	margin: 10px 30px;
 	display: none;
  }
  
@@ -109,6 +110,7 @@
 	text-align: center;
 	font-size: 36px;
 	padding-bottom: 15px;
+	letter-spacing: 0.5rem;
  }
  
  .home-section {
@@ -133,6 +135,7 @@
  }
  
  .box-feature{
+	padding-left: 20px;
 	width: 60%;
 	max-height: auto;
  }
@@ -143,6 +146,7 @@
 
 /* Products page */
  .samples {
+	padding: 100px 100px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -299,8 +303,14 @@ button:hover {
 	  align-items: center;
 	}
 
+
 	.section-text-products h2 {
 		margin-top: 100px;
+		font-size: 1.5rem;
+	}
+
+	.section-text-products p {
+		font-size: 1.2rem;
 	}
 	
 	#iceCreamList {

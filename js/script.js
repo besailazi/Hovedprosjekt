@@ -73,12 +73,34 @@ function showSlides() {
 	});
  });
 
-
-
  // Add alert that is shown when sumbit button is presset //
  function submitForm() {
 	
-	alert("Reservation submitted! We will contact you to confirm.");
+		const name = document.querySelector('#name').value;
+		const phone = document.querySelector('#phone').value;
+		const email = document.querySelector('#email').value;
+		const persons = document.querySelector('#persons').value;
+		const date = document.querySelector('#date').value;
+		const time = document.querySelector('#time').value;
+  
+	if (!name || !phone || !email || !persons || !date || !time) {
+		alert("Please fill out all the fields in the form.");
+  } else {
+	
+	   const reservationDetails = `
+            Name: ${name}
+            Phone: ${phone}
+            Email: ${email}
+            Number of Persons: ${persons}
+            Date: ${date}
+            Time: ${time}
+        `;
+
+        alert(`Reservation submitted! We will contact you to confirm.\n\n${reservationDetails}`);
+
+        // You can reset the form if needed
+        document.querySelector('#reservationForm').reset();
+    }
 }
 
 
