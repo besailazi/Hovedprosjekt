@@ -41,9 +41,9 @@ function showSlides() {
 	  'Wild Berrys', 'Stracitella', 'Kinder Boueno', 'Nutella', 'Snickers'
 	];
 
-	const lactoseFreeCheckbox = document.getElementById('lactoseFreeCheckbox');
+	const lactoseFreeCheckbox = document.querySelector('#lactoseFreeCheckbox');
 
-	const iceCreamListContainer = document.getElementById('iceCreamList');
+	const iceCreamListContainer = document.querySelector('#iceCreamList');
 
 	displayIceCreamTypes(iceCreamTypes);
 
