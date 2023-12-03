@@ -1,4 +1,7 @@
-
+:root {
+	--primary-color: rgb(243, 242, 238);
+	--secondary-color: rgb(17, 49, 17);
+}
 
  body{
 	display: flex;
@@ -7,7 +10,7 @@
 	letter-spacing: 2px;
 	font-weight: 400;
 	font-size: 1rem;
-	background-color: rgb(243, 242, 238);
+	background: var(--primary-color);
  }
  
  h1 {
@@ -28,12 +31,13 @@
 	position: fixed;
 	display: flex;
 	flex-direction: row;
-	background:rgb(17, 49, 17);
+	background: var(--secondary-color);
 	color: white;
 	width: 100%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	z-index: 1;
+	letter-spacing: 0.5rem;
  }
 
  .navigation-bar {
@@ -95,7 +99,6 @@
 	text-align: left;
  }
  
- 
  section {
 	display: flex;
 	flex-direction: row;
@@ -131,7 +134,7 @@
  .about-section{
 	display: flex;
 	flex-direction: row-reverse;
-	background-color: rgb(17, 49, 17);
+	background: var(--secondary-color);
 	color: #fff;
  }
  
@@ -169,7 +172,7 @@
  }
 
  .iceCreamItem {
-	background-color: #fff;
+	background-color: white;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 4px;
@@ -182,7 +185,7 @@
 
  /* Reservation page */
  .reservation-container {
-	background-color: rgb(17, 49, 17);
+	background-color: var(--secondary-color);
 	color:#fff;
 	padding: 20px;
 	border-radius: 4px;
@@ -206,8 +209,8 @@ textarea {
 }
 
 button {
-	background-color: rgb(243, 242, 238);
-	color: rgb(17, 49, 17);
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 	padding: 15px 80px;
 	border: 2px solid #ccc;
 	border-radius: 4px;
@@ -220,7 +223,7 @@ button:hover {
 
  /* Contact page */
  .contact-section {
-	background: rgb(243, 242, 238);
+	background: var(--primary-color);
 	color: #000;
  }
  
@@ -247,9 +250,8 @@ button:hover {
 	height: 5rem;
 	width: 100%;
 	color: #fff;
-	background-color: rgb(17, 49, 17);
+	background-color: var(--secondary-color);
  }
- 
  
  .footer-section .personal-info{
 	margin-left: 40rem;
@@ -261,8 +263,8 @@ button:hover {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color:rgb(17, 49, 17);
-	color: #fff;
+	background-color: var(--secondary-color);
+	color: white;
 	padding: 10px 15px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -304,7 +306,6 @@ button:hover {
 	  align-items: center;
 	}
 
-
 	.section-text-products h2 {
 		margin-top: 100px;
 		font-size: 1.5rem;
@@ -318,11 +319,11 @@ button:hover {
 		flex-direction: column;
 		align-items: center;
 		padding-top: 50px;
-	 }
+	}
 
 	 .iceCreamItem {
 		width: 100%;
-	 }
+	}
 	
 	.section-text h2 {
 	  text-align: center; 
@@ -345,15 +346,13 @@ button:hover {
 		font-size: 1.5rem;
 	}
 
-	.input-reservation,
-textarea {
-	width: 80%;
-}
+	.input-reservation, textarea {
+	   width: 80%;
+   }
 
 	.footer-section .personal-info {
 		width: 100%;
-		margin-left: 0;
-		
+		margin-left: 0;	
 	}
 	
  }
