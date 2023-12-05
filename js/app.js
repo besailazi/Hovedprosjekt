@@ -53,7 +53,6 @@ function showSlides() {
 		 ['Strawberry', 'Kiwi', 'Mango', 'Lemon', 'Blueberry'].includes(iceCreamType);
 	}
 
-	
 	function displayIceCreamTypes(iceCreamTypes) {
 	
 	  iceCreamListContainer.innerHTML = '';
@@ -73,7 +72,12 @@ function showSlides() {
 	});
  });
 
+
  // Add alert that is shown when sumbit button is presset //
+ document.querySelector('#submitButton').addEventListener('click', function() {
+	submitForm();
+});
+
  function submitForm() {
 	
 		const name = document.querySelector('#name').value;
