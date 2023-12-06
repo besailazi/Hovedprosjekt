@@ -24,3 +24,9 @@ Welcome to the Buon Gelato website! This website showcases the offerings of Buon
 -assets: Includes images used on the website.
 
 -js: Contains JavaScript files for implementing dynamic functionality.
+
+# Sources:
+- ChatGPT.com (for help with the javascript).
+- Codepen.com (for inspiration for the layout of my website).
+
+
