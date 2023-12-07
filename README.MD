@@ -26,7 +26,9 @@ Welcome to the Buon Gelato website! This website showcases the offerings of Buon
 -js: Contains JavaScript files for implementing dynamic functionality.
 
 # Sources:
-- ChatGPT.com (for help with the javascript).
-- Codepen.com (for inspiration for the layout of my website).
+- https://chat.openai.com/auth/login (for help with the logic along the way).
+- https://codepen.io (for inspiration for the layout of my website).
+- https://unsplash.com (for images).
+- https://colorhunt.co (for color inspiration).
 
 
